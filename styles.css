@@ -1,0 +1,228 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    cursor: url(cat.png), auto;
+    text-decoration: none;
+    color: #242625;
+}
+*::-webkit-scrollbar
+{
+    display: none;    
+}
+.align_row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.align_column
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.align_row_between
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.align_column_between
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+}
+input
+{
+    border: none;
+    outline: none;
+}
+.phone_body
+{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 430px;
+    margin-top: 30px;
+}
+.top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+.boxcontent
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c5e5ad;
+    margin: 4px;
+    width: 96%;
+    border-radius: 60px;
+    padding: 10px 30px;
+}
+.bookcount
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    border-left: 2px solid #b8d8a0;
+    height: 40px;
+}
+.boxtext
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.middle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.posterbox
+{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    margin: 10px;
+    border: 1px rgba(150, 150, 150, 0.5) solid;
+    border-radius: 40px;
+}
+.postertitle
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.poster
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px rgba(150, 150, 150, 0.5) solid;
+    border-radius: 20px;
+}
+.tag
+{
+    padding: 4px 8px;
+    background-color: rgb(190, 229, 255);
+    margin: 6px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 15px;
+}
+.phone_top
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 430px;
+    height: 90px;
+    padding-top: 20px;
+}
+.background-top
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-top: 30px;
+}
+.background-bottom
+{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    margin-top: 820px;
+    height: 500px;
+}
+.phone_bottom
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 430px;
+    height: 60px;
+}
+.bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 30px;
+}
+.inputt
+{
+    width: 80%;
+    border-radius: 30px;
+    border: 2px rgba(150, 150, 150, 0.5) solid;
+    padding: 10px 20px;
+    padding-right: 60px;
+    font-size: 20px;
+}
+.people
+{
+    padding: 15px;
+    background-color: whitesmoke;
+    margin: 6px;
+    font-size: 13px;
+    font-weight: 800;
+    border-radius: 15px;
+    border: 1px rgba(150, 150, 150, 0.5) solid;
+}
+.f5star
+{
+    margin-left: 20px;
+    align-self: flex-start;
+}
