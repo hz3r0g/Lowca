@@ -21,8 +21,7 @@ const Tabs = () => {
           elevation: 5,
           backgroundColor: '#fff',
           height: 80,
-          ...styles.shadow,
-        },
+          },
       }}
     >
       <Tab.Screen name="Home" component={HomeScreen} options={{
@@ -96,10 +95,10 @@ const Tabs = () => {
               style={{
                 width: 26,
                 height: 26,
-                tintColor: focused ? '#d32f2f' : '#888',
+                tintColor: focused ? '#222' : '#888',
               }}
             />
-            <Text style={{ color: focused ? '#d32f2f' : '#888', fontSize: 11, marginTop: 2 }}>Profile</Text>
+            <Text style={{ color: focused ? '#222' : '#888', fontSize: 11, marginTop: 2 }}>Profile</Text>
           </View>
         ),
       }} />
@@ -143,7 +142,7 @@ const styles = StyleSheet.create({
     elevation: 12,
   },
   fabFocused: {
-    backgroundColor: '#b71c1c',
+    backgroundColor: '#d32f2f',
   },
 });
 
