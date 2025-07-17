@@ -1,25 +1,13 @@
-import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import React from "react";
+import { Text, View, Button } from "react-native";
 
 const ProfileScreen = () => {
-  return (  
-    <View style={styles.container}>
-      <Text>Profile</Text>
-      <Button 
-        title="Press Me"
-        onPress={() => alert('Button pressed!')}
-      />    
+  return (
+    <View className="flex-1 items-center justify-center bg-white">
+      <Text className="text-2xl font-bold mb-4">Profile</Text>
+      <Button title="Press Me" onPress={() => alert("Button pressed!")} />
     </View>
   );
-}
+};
 
 export default ProfileScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
