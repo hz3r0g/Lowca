@@ -86,7 +86,7 @@ const Tabs = () => {
         component={HomeStack} 
         options={{
           tabBarIcon: ({ focused }) => (
-            <View className="items-center justify-center">
+            <View className="items-center justify-center" style={{ marginTop: 10 }}>
               <Ionicons
                 name={focused ? "home" : "home-outline"}
                 size={22}
@@ -103,7 +103,7 @@ const Tabs = () => {
         component={FindStack} 
         options={{
           tabBarIcon: ({ focused }) => (
-            <View className="items-center justify-center">
+            <View className="items-center justify-center" style={{ marginTop: 10 }}>
               <Ionicons
                 name={focused ? "search" : "search-outline"}
                 size={22}
@@ -128,6 +128,7 @@ const Tabs = () => {
                 shadowRadius: 5,
                 elevation: 4,
                 marginBottom: 5,
+                marginTop: 10,
               }}
             >
               <Ionicons name="add" size={28} color="#fff" />
@@ -142,7 +143,7 @@ const Tabs = () => {
         component={CollectionStack} 
         options={{
           tabBarIcon: ({ focused }) => (
-            <View className="items-center justify-center">
+            <View className="items-center justify-center" style={{ marginTop: 10 }}>
               <Ionicons
                 name={focused ? "bookmark" : "bookmark-outline"}
                 size={22}
@@ -159,7 +160,7 @@ const Tabs = () => {
         component={ProfileScreen} 
         options={{
           tabBarIcon: ({ focused }) => (
-            <View className="items-center justify-center">
+            <View className="items-center justify-center" style={{ marginTop: 10 }}>
               <Ionicons
                 name={focused ? "person" : "person-outline"}
                 size={22}
