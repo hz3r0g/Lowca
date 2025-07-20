@@ -19,22 +19,24 @@ export const MAP_TYPES = {
 
 // Map marker colors by type
 export const MARKER_COLORS = {
-  Cafe: '#3B82F6',       // Blue
-  Restaurant: '#EF4444', // Red
-  'Fast Food': '#F59E0B', // Orange
-  Bar: '#8B5CF6',        // Purple
-  Bakery: '#EC4899',     // Pink
-  default: '#10B981',    // Green (default)
+  'Nhà hàng': '#EF4444',     // Đỏ
+  'Quán ăn': '#F97316',      // Cam
+  'Quán cà phê': '#3B82F6',  // Xanh dương
+  'Quán nước': '#06B6D4',    // Xanh lam
+  'Quán ăn vặt': '#F59E0B',  // Vàng cam
+  'Quán bar': '#8B5CF6',     // Tím
+  'Tiệm bánh': '#EC4899',    // Hồng
+  default: '#10B981',        // Xanh lá (mặc định)
 };
 
-// Map marker icons by type
+// Map marker icons by category
 export const MARKER_ICONS = {
-  Cafe: 'cafe',
-  Restaurant: 'restaurant',
-  'Fast Food': 'fast-food',
-  Bar: 'beer',
-  Bakery: 'pizza',
-  default: 'restaurant',
+  food: 'restaurant',         // Quán ăn
+  drink: 'cafe',              // Quán nước
+  snack: 'fast-food',         // Ăn vặt
+  specialty: 'nutrition',     // Đặc sản
+  atmosphere: 'image',        // Không gian
+  default: 'location',        // Mặc định
 };
 
 // Custom map style to hide default POIs and only show roads

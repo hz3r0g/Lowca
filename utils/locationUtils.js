@@ -94,14 +94,12 @@ export const openMapsWithDirections = (destination, destinationName, startLocati
           // Fallback to Apple Maps (doesn't support search term with coordinates as well as Google)
           const appleMapsUrl = `maps://app?saddr=${startParam}&daddr=${destinationCoords}&q=${encodedName}`;
           Linking.openURL(appleMapsUrl).catch(err => {
-            console.log('Error opening Apple Maps:', err);
             // Final fallback to web
             openGoogleMapsWeb(startParam, destinationCoords, destinationName, travelMode);
           });
         }
       })
       .catch(error => {
-        console.log('Error checking URL scheme support:', error);
         // Fallback to web URL
         openGoogleMapsWeb(startParam, destinationCoords, destinationName, travelMode);
       });
@@ -151,7 +149,6 @@ export const openMapsWithDirections = (destination, destinationName, startLocati
         }
       })
       .catch(error => {
-        console.log('Error opening maps:', error);
         openGoogleMapsWeb(startParam, destinationCoords, destinationName, travelMode);
       });
   }
@@ -169,6 +166,5 @@ const openGoogleMapsWeb = (startParam, destinationCoords, destinationName, trave
   
   const url = `https://www.google.com/maps/dir/?api=1&origin=${startParam}&destination=${destinationParam}&destination_place_id=&travelmode=${travelMode}&query=${encodedName}`;
   
-  console.log('Opening web URL:', url);
   Linking.openURL(url);
 }; 

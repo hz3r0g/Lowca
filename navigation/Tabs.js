@@ -12,6 +12,7 @@ import PostScreen from '../screens/PostScreen';
 import PostDetailScreen from '../screens/PostDetailScreen';
 import RestaurantProfileScreen from '../screens/RestaurantProfileScreen';
 import CommentsScreen from '../screens/CommentsScreen';
+import NotificationsScreen from '../screens/NotificationsScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -27,6 +28,7 @@ const HomeStack = () => {
       <Stack.Screen name="PostDetail" component={PostDetailScreen} />
       <Stack.Screen name="RestaurantProfile" component={RestaurantProfileScreen} />
       <Stack.Screen name="Comments" component={CommentsScreen} />
+      <Stack.Screen name="Notifications" component={NotificationsScreen} />
     </Stack.Navigator>
   );
 };
@@ -64,13 +66,7 @@ const Tabs = () => {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
-          position: 'absolute',
-          bottom: Platform.OS === 'ios' ? 25 : 15,
-          left: 20,
-          right: 20,
-          elevation: 0,
           backgroundColor: 'rgba(255, 255, 255, 0.95)',
-          borderRadius: 15,
           height: 60,
           shadowColor: '#000',
           shadowOffset: {
@@ -80,6 +76,8 @@ const Tabs = () => {
           shadowOpacity: 0.1,
           shadowRadius: 3.5,
           borderTopWidth: 0,
+          paddingBottom: Platform.OS === 'ios' ? 0 : 10,
+          position: 'relative', // Đảm bảo không dùng absolute
         },
       }}
     >
